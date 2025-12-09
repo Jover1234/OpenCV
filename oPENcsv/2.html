@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OpenCV.js Blend Images with Trackbar</title>
+</head>
+<body>
+<h2>Blend Two Images with Trackbar</h2>
+
+
+<input type="file" id="fileInput1" />
+<input type="file" id="fileInput2" />
+<br><br>
+
+
+<canvas id="canvasInput1" style="border:1px solid black;"></canvas>
+<canvas id="canvasInput2" style="border:1px solid black;"></canvas>
+<br><br>
+
+<label for="trackbar">Weight:</label>
+<input type="range" id="trackbar" value="50" min="0" max="100" step="1" oninput="updateBlend()">
+<input type="text" id="weightValue" size="3" value="50"/>
+<br><br>
+
+
+<canvas id="canvasOutput" style="border:1px solid black;"></canvas>
+
+
+<script src="2.js"></script>
+
+<script async src="https://docs.opencv.org/4.x/opencv.js"></script>
+</body>
+</html>
